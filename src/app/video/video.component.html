@@ -1,0 +1,17 @@
+<section id="videoDetails">
+  <table>
+    <tr>
+      <td><img src="{{currVideo.thumbnail_360_url}}" id="videoImg"/></td>
+      <td>
+        <a href="https://www.dailymotion.com/video/{{currVideo.id}}" target=_blank id="titleLink">{{currVideo.title}}</a> <br>
+        <img src="{{currVideo['owner.avatar_80_url']}}" id="avatar"/> {{currVideo["owner.username"]}}<br>
+        Date: {{currVideo.created_time * 1000 | date}} | {{currVideo.views_total}}<br><br>
+        <p *ngIf="(isInPlaylist === false) else disabled"><button (click)="btnAddToPlaylist()" id="btnAddVideo">Add To Playlist</button></p>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<ng-template #disabled>
+  <p><button (click)="btnAddToPlaylist()" id="btnAddVideo" disabled>Already in playlist</button></p>
+</ng-template>

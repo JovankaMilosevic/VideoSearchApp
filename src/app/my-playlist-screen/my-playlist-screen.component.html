@@ -1,0 +1,16 @@
+<div id="container">
+  <div id="titleDiv">
+    <h2 id="title">Your playlist</h2>
+  </div>
+  <div id="clear" *ngIf="(myPlaylist.length > 0) else emptyList">
+    <button id="btnClear" (click)="btnClearPressed()">Clear Playlist</button>
+  </div>
+</div>
+
+<app-listing [listData]="myPlaylist"></app-listing>
+
+<ng-template #emptyList>
+  <div id="empty">
+    <p>There are no videos in your playlist.</p>
+  </div>
+</ng-template>

@@ -1,0 +1,53 @@
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  align-self: center;
+}
+
+#titleDiv{
+  grid-column: 2 / span 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+
+#title{
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+}
+
+#clear{
+  grid-column: 2 / span 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#btnClear{
+  width: 150px;
+  height: 60x;
+  border: 2px solid blue;
+  border-radius: 4px;
+  padding:10px;
+  background-color:lightgoldenrodyellow;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#btnClear:hover{
+  background-color: cornflowerblue;
+}
+
+#empty{
+  text-align: center;
+  margin-top: 20px;
+}
+

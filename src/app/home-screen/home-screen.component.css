@@ -1,0 +1,77 @@
+
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 70px;
+  align-self: center;
+}
+
+
+#home{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align:right;
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#playlist{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: left;
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+#home:hover{
+  color:slategray;
+}
+
+#playlist:hover{
+  color:slategray;
+}
+
+#video{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+ 
+}
+
+#btnVideoDiv{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 30px, 50px, 30px, 50px;
+  text-align: center;
+}
+
+#btnVideo{
+  width: 120px;
+  height: 40x;
+  text-align: center;
+  font-size: 16px;
+}
+
+#videoname{
+  width: 280px;
+  height: 40x;
+  text-align: left;
+  font-size: 16px;
+}
+
+ 
+

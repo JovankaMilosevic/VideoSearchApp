@@ -1,0 +1,15 @@
+
+<div class="container">
+  <div id="video">
+    <form>
+      <input (keyup)="onKey($event)" type="text" id="videoname" name="videoname" placeholder="Search for a video...">
+    </form>
+  </div>
+
+  <div id="btnVideoDiv">
+    <button (click)="btnGetVideosPressed()" id="btnVideo">Get Videos</button>
+  </div>
+</div>
+
+<app-listing [listData]="videosListFromAPI"></app-listing>
+
